@@ -108,3 +108,37 @@ mysql -u root -p retail_sales < 03_analysis_queries.sql
 Customer names in the sample data are not unique (multiple different customers share the same name, as happens in real systems). Queries that report per-customer results group by `customer_id` (not name) to keep each customer's numbers accurate.
 
 This project was originally prototyped in SQLite for query development, then converted to standard MySQL syntax (AUTO_INCREMENT, InnoDB engine, DATE_FORMAT). Verified by executing all scripts against a MySQL 8 instance.
+
+
+
+---
+
+## 📷 SQL Query Outputs
+
+### 💰 Total Revenue
+
+![Revenue Analysis](images/revenue-analysis.png)
+
+---
+
+### 🏆 Top Selling Products
+
+![Top Products](images/top-products.png)
+
+---
+
+### 📊 Sales by Category
+
+![Category Analysis](images/category-analysis.png)
+
+---
+
+### 👤 Top Customers
+
+![Top Customers](images/top-customers.png)
+
+---
+
+### 📅 Monthly Revenue Trend
+
+![Monthly Revenue](images/monthly-revenue.png)
