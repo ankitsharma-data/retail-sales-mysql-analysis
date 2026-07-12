@@ -1,3 +1,36 @@
+![Project Cover](images/cover.png)
+
+# 🛍️ Retail Sales Analysis using MySQL
+
+## 📌 Project Overview
+
+This project demonstrates an end-to-end **Retail Sales Analysis** using **MySQL**. It focuses on database design, data analysis, and generating actionable business insights using SQL.
+
+---
+
+## 🛠️ Tech Stack
+
+- MySQL
+- SQL
+- Git
+- GitHub
+
+---
+
+## 📂 Repository Structure
+
+```text
+retail-sales-mysql-analysis
+│
+├── images/
+│   └── cover.png
+├── 01_schema.sql
+├── 02_seed_data.sql
+├── 03_analysis_queries.sql
+└── README.md
+```
+
+---
 # Retail Sales Analysis using MySQL
 
 ## Overview
