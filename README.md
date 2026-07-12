@@ -2,6 +2,15 @@
 
 # 🛍️ Retail Sales Analysis using MySQL
 
+## 📊 Key Results
+
+- 💰 Total Revenue: ₹16,83,401
+- 🛍️ Highest Revenue Category: Electronics
+- 👤 Top Spending Customer: Ankit Verma
+- 📈 Monthly Revenue Trend Analysis
+- 🏆 Best Selling Products
+- 🌍 City-wise Sales Analysis
+
 ## 📌 Project Overview
 
 This project demonstrates an end-to-end **Retail Sales Analysis** using **MySQL**. It focuses on database design, data analysis, and generating actionable business insights using SQL.
