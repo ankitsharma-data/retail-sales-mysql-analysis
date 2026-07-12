@@ -13,7 +13,7 @@
 
 ## 📌 Project Overview
 
-This project demonstrates an end-to-end **Retail Sales Analysis** using **MySQL**. It focuses on database design, data analysis, and generating actionable business insights using SQL.
+This project involves a relational database for retail sales data (customers, products, orders, and order items) built in MySQL and analyzed using SQL to answer business questions related to revenue trends, top-performing products, and customer behavior.
 
 ---
 
@@ -54,16 +54,16 @@ A relational database of retail sales (customers, products, orders, and order it
 40 customers, 12 products, 250 orders, 625 order line items.
 
 ## Business Questions Answered
-1. What is the total revenue generated?
-2. Which products sell the most units?
-3. Which product category earns the most revenue?
-4. How does revenue trend month over month?
-5. Who are the top-spending customers?
-6. Which cities generate the most orders?
+1. How much total revenue generated?
+2. Which product sells more units??
+3. Which product category generates more revenue??
+4. What is the month-over-month revenue trend?
+5. Who are our highest-spending customers??
+6. Which city generates more orders??
 7. What is the average order value?
-8. Are there any customers who haven't purchased yet?
-9. Which customers are repeat buyers?
-10. Which products underperform relative to the average?
+8. Are there any customers who have not made a purchase yet??
+9. Which customers buy from us repeatedly??
+10. Which products underperform compared to the average??
 
 ## Tools Used
 - MySQL
@@ -97,18 +97,18 @@ mysql -u root -p retail_sales < 03_analysis_queries.sql
 ```
 
 ## Key Findings
-- Total revenue across all orders: **₹16,83,401**
-- **Electronics** is the highest-revenue category (~60% of total revenue)
-- Average order value: **₹6,733.6**
-- Top customer by spend: Ankit Verma (customer_id 32), with ₹85,577 total spend
-- Most frequent repeat buyer: Aman Mishra (customer_id 27), with 12 separate orders
-- Stationery items (e.g. Notebook Set) consistently underperform other categories
+• Total revenue across all orders: ₹16,83,401
+• Electronics is the highest-revenue category, accounting for approximately 60% of total revenue.
+• Average order value (AOV): ₹6,733.60
+• Top customer by spend: Ankit Verma (Customer ID: 32), with a total spend of ₹85,577.
+• Most frequent repeat buyer: Aman Mishra (Customer ID: 27), with 12 separate orders.
+• Stationery items (e.g., Notebook Set) consistently underperform compared to other categories.
 
 ## Note
-Customer names in the sample data are not unique (multiple different customers share the same name, as happens in real systems). Queries that report per-customer results group by `customer_id` (not name) to keep each customer's numbers accurate.
 
-This project was originally prototyped in SQLite for query development, then converted to standard MySQL syntax (AUTO_INCREMENT, InnoDB engine, DATE_FORMAT). Verified by executing all scripts against a MySQL 8 instance.
+•Customer names in the sample data are not unique; multiple customers may share the same name, as often occurs in real-world systemes. Therefore, queries that report per-customer results group by 'customer_id' rather than customer name to ensure accurate customer-level metrics.
 
+•This project was initially prototyped in SQLite for query development and was later converted to standard MySQL syntax (including AUTO_INCREMENT, the InnoDB storage engine, and DATE_FORMAT). All scripts were verified by executing them against a MySQL 8 instance.
 
 
 ---
